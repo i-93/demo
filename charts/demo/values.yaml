@@ -18,11 +18,11 @@ podAnnotations:
   iam.amazonaws.com/role: "kiam-test-role"
 resources:
   limits:
-    cpu: 200m
-    memory: 128Mi
+    cpu: 500m
+    memory: 512Mi
   requests:
-    cpu: 200m
-    memory: 128Mi
+    cpu: 400m
+    memory: 512Mi
 probePath: /actuator/health
 livenessProbe:
   initialDelaySeconds: 60
